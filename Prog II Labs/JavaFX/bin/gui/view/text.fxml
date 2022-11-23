@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.collections.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.collections.FXCollections?>
+<?import javafx.collections.ObservableList?>
+
+<AnchorPane prefHeight="495.0" prefWidth="776.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.controller.Controller">
+	<children>
+		<Button fx:id="btnSave" layoutX="54.0" layoutY="431.0" mnemonicParsing="false" onAction="#handleSave" prefHeight="23.0" prefWidth="143.0" text="Save" />
+		<Button layoutX="231.0" layoutY="431.0" mnemonicParsing="false" onAction="#handleLoad" prefHeight="23.0" prefWidth="143.0" text="Load" />
+		<Button layoutX="580.0" layoutY="431.0" mnemonicParsing="false" onAction="#handleDelete" prefHeight="23.0" prefWidth="143.0" text="Delete" />
+		<Button layoutX="413.0" layoutY="431.0" mnemonicParsing="false" onAction="#handleClear" prefHeight="23.0" prefWidth="143.0" text="Clear" />
+		<Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="172.0" layoutX="54.0" layoutY="240.0" stroke="BLACK" strokeType="INSIDE" width="335.0" />
+		<Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="172.0" layoutX="400.0" layoutY="241.0" stroke="BLACK" strokeType="INSIDE" width="329.0" />
+		<Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="147.0" layoutX="55.0" layoutY="74.0" stroke="BLACK" strokeType="INSIDE" width="679.0" />
+		<ComboBox fx:id="cmbMf1" layoutX="182.0" layoutY="362.0" prefHeight="25.0" prefWidth="181.0">
+			<items>
+				<FXCollections fx:factory="observableArrayList">
+					<String fx:value="United States" />
+					<String fx:value="China" />
+					<String fx:value="Germany" />
+				</FXCollections>
+
+			</items>
+			<value>
+				<String fx:value="United States" />
+			</value>
+		</ComboBox>
+		<TextField fx:id="txtRes1" layoutX="182.0" layoutY="322.0" prefHeight="25.0" prefWidth="181.0" />
+		<TextField fx:id="txtVolt1" layoutX="182.0" layoutY="283.0" onDragOver="#focusGained" prefHeight="25.0" prefWidth="181.0" />
+		<Label layoutX="73.0" layoutY="283.0" prefHeight="25.0" prefWidth="109.0" text="Voltage:" />
+		<Label layoutX="73.0" layoutY="362.0" prefHeight="25.0" prefWidth="109.0" text="Mf. Location:" />
+		<Label layoutX="259.0" layoutY="170.0" prefHeight="25.0" prefWidth="102.0" text="Time/Date:" />
+		<Label layoutX="259.0" layoutY="130.0" prefHeight="25.0" prefWidth="102.0" text="Toy ID:" />
+		<Label layoutX="259.0" layoutY="91.0" prefHeight="25.0" prefWidth="102.0" text="Inspector:" />
+		<TextField fx:id="txtIns" layoutX="368.0" layoutY="91.0" prefHeight="25.0" prefWidth="181.0" />
+		<TextField fx:id="txtToyID" layoutX="368.0" layoutY="130.0" prefHeight="25.0" prefWidth="181.0" />
+		<Label layoutX="55.0" layoutY="30.0" prefHeight="32.0" prefWidth="679.0" text="TOY INSPECTION SOFTWARE" textOverrun="CLIP">
+			<font>
+				<Font size="36.0" />
+			</font>
+		</Label>
+		<Label layoutX="67.0" layoutY="248.0" prefHeight="25.0" prefWidth="102.0" text="CIRCUIT 1">
+			<font>
+				<Font size="20.0" />
+			</font>
+		</Label>
+		<Label layoutX="413.0" layoutY="248.0" prefHeight="25.0" prefWidth="102.0" text="CIRCUIT 2">
+			<font>
+				<Font size="20.0" />
+			</font>
+		</Label>
+		<Label layoutX="420.0" layoutY="322.0" prefHeight="25.0" prefWidth="109.0" text="Resistance:" />
+		<Label layoutX="420.0" layoutY="362.0" prefHeight="25.0" prefWidth="109.0" text="Mf. Location:" />
+		<Label layoutX="420.0" layoutY="283.0" prefHeight="25.0" prefWidth="109.0" text="Voltage:" />
+		<TextField fx:id="txtVolt2" layoutX="529.0" layoutY="283.0" prefHeight="25.0" prefWidth="181.0" />
+		<TextField fx:id="txtRes2" layoutX="529.0" layoutY="322.0" prefHeight="25.0" prefWidth="181.0" />
+		<ComboBox fx:id="cmbMf2" layoutX="529.0" layoutY="362.0" prefHeight="25.0" prefWidth="181.0">
+			<items>
+				<FXCollections fx:factory="observableArrayList">
+					<String fx:value="United States" />
+					<String fx:value="China" />
+					<String fx:value="Germany" />
+				</FXCollections>
+
+			</items>
+			<value>
+				<String fx:value="United States" />
+			</value>
+		</ComboBox>
+		<TextField fx:id="txtDate" editable="false" layoutX="368.0" layoutY="170.0" opacity="0.63" prefHeight="25.0" prefWidth="181.0" text="&lt;calculated&gt;" />
+		<Label layoutX="73.0" layoutY="322.0" prefHeight="25.0" prefWidth="109.0" text="Resistance:" />
+	</children>
+</AnchorPane>

@@ -1,0 +1,45 @@
+/**
+ * Defines the a new instance of the class circuit as C.
+ */
+private static Circuit cC = new Circuit();
+
+/**
+ * Defines the ArrayList, "circuitArray" as a double ArrayList.
+ */
+private static ArrayList<Double> circuitArray = new ArrayList<>();
+
+/**
+ * Defines the method of getN().
+ * 
+ * @return n
+ */
+public ArrayList<Double> getArray() {
+	return circuitArray;
+}
+/**
+ * Defines the double "sum." This variable is the sum of all resistors.
+ */
+private static double n, sum;
+
+/**
+ * Defines the method of getN().
+ * 
+ * @return n
+ */
+public double getN() {
+	return n;
+}
+
+/**
+ * Defines the integer "m," m is a counter for the program.
+ */
+private static int m;
+
+/**
+ * Defines the method of getM().
+ * 
+ * @return m
+ */
+public double getM() {
+	return m;
+}
